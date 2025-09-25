@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Ashiqur Rahman Khan - Software Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+        }
+        
+        .cv-container {
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        .professional-summary {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+        
+        .experience-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 16px;
+        }
+        
+        .company {
+            color: #3498db;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .duration {
+            color: #666;
+            font-size: 14px;
+            font-style: italic;
+        }
+        
+        .achievements {
+            list-style: none;
+            margin-top: 8px;
+        }
+        
+        .achievements li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        .achievements li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .skill-list {
+            color: #555;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .institution {
+            color: #3498db;
+            font-size: 14px;
+        }
+        
+        .education-details {
+            color: #666;
+            font-size: 13px;
+            margin-top: 3px;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            .cv-container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <div class="name">Md Ashiqur Rahman Khan</div>
+            <div class="title">Backend Software Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">📧 arkhan.private@gmail.com</div>
+                <div class="contact-item">📱 +880 1689860381</div>
+                <div class="contact-item">🔗 linkedin.com/in/a-r-khan</div>
+                <div class="contact-item">💻 github.com/ark-showcase</div>
+                <div class="contact-item">📍 Mirpur-2, Dhaka, Bangladesh</div>
+            </div>
+        </div>
+
+        <div class="professional-summary">
+            Results-driven Backend Developer with 2+ years of experience building scalable systems using Python, JavaScript, and TypeScript. Proven track record of optimizing backend performance and delivering robust solutions that enhance operational efficiency and drive business growth.
+        </div>
+
+        <div class="two-column">
+            <div class="main-content">
+                <div class="section">
+                    <h2 class="section-title">Professional Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Backend Developer</div>
+                                <div class="company">Ami Probashi Limited</div>
+                            </div>
+                            <div class="duration">Nov 2023 - Present</div>
+                        </div>
+                        <ul class="achievements">
+                            <li>Engineered comprehensive issue ticketing system, reducing average resolution time by 40% for stakeholders and consumers</li>
+                            <li>Developed automated data correction application, improving data accuracy by 35% across multiple stakeholder platforms</li>
+                            <li>Designed and implemented secure fingerprint registration and verification system using biometric authentication protocols</li>
+                            <li>Built business insights dashboard providing actionable analytics, increasing operational efficiency by 25%</li>
+                            <li>Integrated multiple third-party SDKs for enhanced functionality and seamless user experience</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Backend Developer (Freelance)</div>
+                                <div class="company">Ginza Xiaoma (E-commerce)</div>
+                            </div>
+                            <div class="duration">Dec 2024 - Feb 2025</div>
+                        </div>
+                        <ul class="achievements">
+                            <li>Developed comprehensive CRM system using TypeScript and NestJS for high-traffic e-commerce platform</li>
+                            <li>Integrated well known Messaging platforms for Campaign module</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    
+                    <div class="education-item">
+                        <div class="degree">M.Sc. in Computer Science and Engineering</div>
+                        <div class="institution">Dhaka University of Engineering & Technology, Gazipur</div>
+                        <div class="education-details">Nov 2024 - Present | Specializing in Advanced Algorithms</div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="degree">B.Sc. in Computer Science and Engineering</div>
+                        <div class="institution">Dhaka University of Engineering & Technology, Gazipur</div>
+                        <div class="education-details">Sept 2016 - June 2021 | 5th Position in Intra DUET Programming Contest 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="section">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <div class="skill-list">Python, JavaScript, TypeScript, C++</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Frameworks</h4>
+                            <div class="skill-list">Django, NestJS, FastAPI</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Databases</h4>
+                            <div class="skill-list">MySQL, PostgreSQL, MongoDB</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Tools & Technologies</h4>
+                            <div class="skill-list">Git, Docker, REST APIs, System Design</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Core Competencies</h4>
+                            <div class="skill-list">OOP, Data Structures & Algorithms, API Development, Performance Optimization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Key Projects</h2>
+                    <ul class="achievements">
+                        <li>Biometric Authentication System</li>
+                        <li>E-commerce CRM Platform</li>
+                        <li>Issue Ticketing System</li>
+                        <li>Business Analytics Dashboard</li>
+                        <li>Data Correction Application</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Interests</h2>
+                    <ul class="achievements">
+                        <li>Emerging Technologies Research</li>
+                        <li>Algorithm Optimization</li>
+                        <li>System Architecture Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
